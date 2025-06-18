@@ -7,24 +7,38 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </head>
 <body>
     <header>
         <div class="logo">
             <img src="./images/logo.png" alt="">
-            <span><strong>Barbearia Alamo</strong></span>
         </div>
+        <h1><strong>Barbearia Alamo</strong></h1>
         <nav class="navbar">
             <ul class="navbar-list">
-                <li class="navbar-item">Home</li>
-                <li class="navbar-item">Sobre</li>
-                <li class="navbar-item">Serviços</li>
-                <li class="navbar-item">Produtos</li>
-                <li class="navbar-item">Contato</li>
+                <li class="navbar-item"><a href="#">Home</a></li>
+                <li class="navbar-item"><a href="#">Sobre</a></li>
+                <li class="navbar-item"><a href="#">Serviços</a></li>
+                <li class="navbar-item"><a href="#">Produtos</a></li>
+                <li class="navbar-item"><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="banner">
+            <swiper-container slides-per-view="3"
+                                grid-rows="3"
+                                mousewheel-force-to-axis="true">
+                <swiper-slide><img src="images/banner/banner-1.jpg" alt=""></swiper-slide>
+                <swiper-slide><img src="images/banner/banner-2.jpg" alt=""></swiper-slide>
+                <swiper-slide><img src="images/banner/banner-3.jpg" alt=""></swiper-slide>
+                ...
+            </swiper-container>
+        </div>
+    </main>
 </body>
 </html>
