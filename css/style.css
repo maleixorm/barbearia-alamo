@@ -6,7 +6,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Fondamento', sans-serif;
+    font-family: 'Funnel Display', sans-serif;
 }
 
 :root {
@@ -22,7 +22,9 @@
 header {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--bg-color);
 }
 
 .logo {
