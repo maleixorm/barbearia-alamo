@@ -1,3 +1,4 @@
+/* Reset e Fonte Padrão */
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@
     scroll-behavior: smooth;
     font-family: 'Funnel Display', sans-serif;
 }
-
+/* Variaveis */
 :root {
     --bg-color: #f1f3f4;
     --second-bg-color: #ffffff;
@@ -19,6 +20,7 @@
     --fourth-color: #668d57;
 }
 
+/* Cabeçalho */
 header {
     display: flex;
     justify-content: center;
@@ -39,6 +41,7 @@ h2 {
     font-weight: 500;
     color: var(--main-color);
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .logo {
@@ -73,6 +76,8 @@ h2 {
     color: var(--second-color);
 }
 
+
+/* Banner */
 .slides {
     display: none;
 }
@@ -168,7 +173,7 @@ h2 {
     to {opacity: 1}
 }
 
-/* Sobre */
+/* Seção Sobre */
 .sobre {
     display: grid;
     column-gap: 1.5rem;
@@ -214,12 +219,12 @@ h2 {
 }
 
 .card__img {
-    width: 310px;
+    width: 250px;
     border-radius: 1.5rem;
 }
 
 .card__data {
-    width: 280px;
+    width: 232px;
     background-color: var(--bg-color);
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
@@ -347,6 +352,14 @@ h2 {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1.5rem;
     }
+
+    .card__img {
+        width: 348px;
+    }
+    .card__data {
+        width: 316px;
+        padding-inline: 2.5rem;
+    }
     
     .sobre {
         grid-template-columns: repeat(2, 1fr);
@@ -371,13 +384,7 @@ h2 {
     .card__container {
         grid-template-columns: repeat(3, 1fr);
     }
-    .card__img {
-        width: 348px;
-    }
-    .card__data {
-        width: 316px;
-        padding-inline: 2.5rem;
-    }
+    
     .sobre__img > img {
         width: 450px;
         border-radius: 2rem;
