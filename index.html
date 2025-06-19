@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="js/index.js" defer></script>
     <script src="js/auto_slide.js" defer></script>
 </head>
 <body>
@@ -17,6 +20,7 @@
             <img src="./images/logo.png" alt="">
         </div>
         <h1><strong>Barbearia Alamo</strong></h1>
+        <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
             <ul class="navbar-list">
                 <li class="navbar-item"><a href="#">Home</a></li>
@@ -55,11 +59,24 @@
                 <span class="ponto-item" onclick="slideAtual(3)"></span>
             </div> -->
         </div>
+
+        <!-- Seção Sobre -->
+        <div class="sobre">
+            <div class="sobre__img">
+                <img src="images/about.jpg" alt="Imagem">
+            </div>
+            <div class="sobre__card">
+                <h3>Quem Somos</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores autem amet saepe sequi voluptas quaerat, tenetur molestiae veritatis quisquam, possimus eius in, animi fuga ad fugiat? Nisi, repudiandae. Ullam laudantium at odit.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate facilis repellendus molestiae corrupti? Possimus est fuga debitis voluptatum tempora, voluptatibus pariatur officia nam necessitatibus sunt totam aspernatur veritatis ipsa itaque, nesciunt modi autem molestiae neque id. Aspernatur ab dolorum est.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia corporis ratione, adipisci fuga vero hic ad esse ex alias expedita provident quod voluptates aspernatur dolores quia. Mollitia, ducimus, praesentium nobis corrupti amet, non blanditiis veritatis esse quas deleniti eius commodi.</p>
+                <span>Socia Midia</span>
+            </div>
+        </div>
         
-        
-        <!-- Seção de Serviços -->
-        <h2>Serviços</h2>
+        <!-- Seção de Serviços -->    
         <div class="container">
+            <h2>Serviços</h2>
             <div class="card__container">
                 <article class="card__article">
                     <img src="images/card/card1.jpg" alt="" class="card__img">
