@@ -1,30 +1,36 @@
-let slideIndex = 1;
-mostrarSlides(slideIndex);
+// Menu hamburguer
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-function maisSlides(n) {
-    mostrarSlides(slideIndex += n);
-}
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
 
-function slideAtual(n) {
-    mostrarSlides(slideIndex = n);
-}
+// Modifica a cor da seção ativa do site
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
-function mostrarSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("slides");
-    let pontos = document.getElementsByClassName("ponto-item");
-    
-    if (n > slides.length) { slideIndex = 1 };
-    if (n < 1) { slideIndex = slides.length };
-    
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    
-    for (i = 0; i < pontos.length; i++) {
-        pontos[i].className = pontos[i].className.replace(" ativo", "");
-    }
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
 
-    slides[slideIndex - 1].style.display = "block";
-    pontos[slideIndex -1].className += " ativo";
-}
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            })
+        }
+    });
+
+    // Sticky da barra de navegação
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 100);
+
+    // Remove o menu quando clica no link
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+};
