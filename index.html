@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <script src="js/index.js" defer></script>
+    <script src="js/auto_slide.js" defer></script>
 </head>
 <body>
     <header>
@@ -45,14 +45,41 @@
                 <div class="texto">Legenda</div>
             </div>
 
-            <a class="prev" onclick="maisSlides(-1)">&#10094;</a>
-            <a class="next" onclick="maisSlides(1)">&#10095;</a>
+            <!-- <a class="prev" onclick="maisSlides(-1)">&#10094;</a>
+            <a class="next" onclick="maisSlides(1)">&#10095;</a> -->
         </div>
-
-        <div class="ponto">
+        <!-- <div class="ponto">
             <span class="ponto-item" onclick="slideAtual(1)"></span>
             <span class="ponto-item" onclick="slideAtual(2)"></span>
             <span class="ponto-item" onclick="slideAtual(3)"></span>
+        </div> -->
+        <div class="container">
+            <div class="card__container">
+                <article class="card__article">
+                    <img src="images/card/card1.jpg" alt="" class="card__img">
+                    <div class="card__data">
+                        <span class="card__description">Inclui lavagem e secagem.</span>
+                        <h2 class="card__title">CORTE MASCULINO - R$99</h2>
+                        <a href="#" class="card__button">Saiba Mais</a>
+                    </div>
+                </article>
+                <article class="card__article">
+                    <img src="images/card/card2.jpg" alt="" class="card__img">
+                    <div class="card__data">
+                        <span class="card__description">Ritual de tratamento de pele com micro esfoliação e drenagem facial. Tolerância de 10min para o início do serviço.</span>
+                        <h2 class="card__title">BARBA CONCEITO - R$80</h2>
+                        <a href="#" class="card__button">Saiba Mais</a>
+                    </div>
+                </article>
+                <article class="card__article">
+                    <img src="images/card/card3.jpg" alt="" class="card__img">
+                    <div class="card__data">
+                        <span class="card__description">Corte e Barba com Ritual de tratamento de pele, micro esfoliação e drenagem facial. Tolerância de 10min para o início do serviço.</span>
+                        <h2 class="card__title">CORTE + BARBA CONCEITO - R$159</h2>
+                        <a href="#" class="card__button">Saiba Mais</a>
+                    </div>
+                </article>
+            </div>
         </div>
     </main>
     <footer></footer>
