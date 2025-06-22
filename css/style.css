@@ -319,6 +319,39 @@ h2 {
     }
 }
 
+/* Contato e Localização */
+.contato {
+    display: grid;
+    place-items: center;
+    padding-block: 5rem;
+    background-color: var(--bg-color);
+    row-gap: 3.5rem;
+}
+
+.info__img {
+    align-items: center;
+    text-align: center;
+}
+
+.info__img {
+    width: 150px;
+}
+
+.map {
+    width: 300px; 
+    height: 225px;
+    border: none;
+}
+
+/* Footer */
+.rodape {
+    background-color: var(--third-color);
+    text-align: center;
+    color: var(--second-bg-color);
+    padding: 2rem 0;
+}
+
+/* Responsividade */
 @media screen and (max-width: 340px) {
     header {
         justify-content: center;
@@ -331,6 +364,7 @@ h2 {
         width: 200px;
         padding: 1rem;
     }
+
     .sobre__img > img {
         width: 200px;
         border-radius: 1.5rem;
@@ -372,6 +406,21 @@ h2 {
     .sobre__card {
         width: 300px;
     }
+    
+    .contato {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+
+    .info__img {
+        width: 300px;
+    }
+
+    .map {
+        width: 450px; 
+        height: 375px;
+        border: none;
+    }
 }
 
 @media screen and (min-width: 1120px){
@@ -384,6 +433,10 @@ h2 {
     .card__container {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .sobre {
+        margin-inline: 7.5rem;
+    }
     
     .sobre__img > img {
         width: 450px;
@@ -392,5 +445,20 @@ h2 {
     .sobre__card {
         width: 450px;
         border-radius: 2rem;
+    }
+
+    .contato {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.5rem;
+    }
+
+    .info__img {
+        width: 350px;
+    }
+
+    .map {
+        width: 600px; 
+        height: 450px;
+        border: none;
     }
 }
