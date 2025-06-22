@@ -343,6 +343,12 @@ h2 {
     height: 450px;
 }
 
+.bi {
+    font-size: 48px;
+    padding: 2rem;
+    color: var(--main-color);
+}
+
 /* Footer */
 .rodape {
     background-color: var(--third-color);
